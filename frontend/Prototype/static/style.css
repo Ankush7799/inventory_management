@@ -1,0 +1,596 @@
+
+    *{
+      margin:0;
+      padding:0;
+      box-sizing:border-box;
+      font-family: Arial, sans-serif;
+    }
+
+    body{
+      background:rgb(255, 255, 255);
+      min-height:100vh;
+      display:flex;
+      flex-direction:column;
+      
+    }
+   
+/* Css for Top Secton starts*/
+
+
+    .top-bar{
+      background:rgb(229, 226, 226);
+      border-bottom:1px solid #130303;
+      padding:10px 30px;
+      display:flex;
+      justify-content: space-around;
+      align-items:center;
+      font-size:14px;
+      color:#444;
+    }
+    .logout-btn{
+  font-size: 15px;
+  font-weight: bold;
+}
+
+    .top-left{
+      display:flex;
+      gap:15px;
+      align-items:center;
+    
+    }
+
+    .top-right{
+      display:flex;
+      gap:15px;
+      align-items:center;
+    }
+
+
+    .main-header{
+      background:white;
+      padding:10px 0px;
+      display:flex;
+      justify-content:space-around;
+      align-items:center;
+    }
+
+    .logo-section{
+      display:flex;
+      align-items:center;
+      gap:15px;
+      border:2px solid #999;
+      padding:12px 18px;
+      background:white;
+    }
+
+    .header-text p{
+      font-size:18px;
+      color:#555;
+    }
+    .P_name /* Project Name, that appears on the top bellow header section of home page */
+    {
+      color: #f5f5f5;
+      font-size: 30px;
+      font-weight: 300;
+      background-color: #2779e3;
+      border-top: 2px solid black;
+      border-bottom: 2px solid black;
+      font-family:Georgia, 'Times New Roman', Times, serif;
+      text-align: center;
+    }
+
+
+    .navbar{
+      background:#0549a1;
+      
+    }
+
+    .navbar ul{
+      list-style:none;
+      display:flex;
+      justify-content:flex-start;
+      flex-wrap:wrap;
+    
+    }
+
+    .navbar ul li a{
+      display:block;/* for larger clickable area: it will occupy max space of li :it will make whole box clickable not just the link*/
+      padding:10px 18px;
+      color:white;
+      text-decoration:none;/* removes underline from link*/
+      font-size:14px;
+      font-weight:bold;
+      transition:0.3s;
+    }
+
+    .navbar ul li a:hover{
+      background:rgb(221, 170, 2);
+      color: black;
+    }
+
+    /*css For Top Section ends*/
+
+    /* css for bottom Section starts*/
+    .footer{
+      
+       background-color: #2779e3;
+       color: #f5f5f5;
+        margin-top: auto;
+      
+    }
+    .main_footer{
+      display: flex;
+      justify-content: space-around;
+     
+
+    }
+    .f_bottom{
+    text-align:center;
+    background-color: #999;
+    }
+    /*css for bottom sectoin ends */
+    
+    /* css for index/home page */
+    .home_dash{
+      background-image: url("ETDC.png");
+
+      background-position:center;
+
+      
+      height: 65vh;
+      width: 100%;
+      background-size:100% 100%;
+     
+
+    }
+    
+    
+/* css for index/home page ends */
+
+
+/* admin page css*/
+/* admin is aslo store officer */
+/* css of page layout and clickable boxes that we have used 
+in admin's dashboard,we will use that layout and clickable 
+boxes in few other pages also so we keep the class name like 'admin_dash' & 'admin_dash_box'  same there also*/
+
+
+    .admin_dash {
+      margin-top:100px;
+      display: flex;
+      flex-direction: column;
+      margin-left: 50px;
+      gap:50px;
+    }
+    .admin_dash_box{
+      
+    background: #0549a1;
+    color: white;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 240px;
+    height: 70px;
+
+    border: 2px solid #f5510b;
+    border-radius: 15px;
+
+    font-size: 18px;
+    font-weight: 600;
+
+    cursor: pointer;
+
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+
+    transition: all 0.3s ease;
+}
+.admin_dash a{
+    text-decoration: none;
+}
+    .admin_dash_box:hover{
+
+    background-color:#f0b810;
+
+    color:black;
+}
+/* admin page css ends */    
+
+
+/* warehouse page css */
+/* same like as admin page, css of this page will also be used 
+in few other pages so we will keep the class name same 
+like 'warehouse' and 'war_head' and we will use css */
+
+
+/*
+.warehouse{ 
+  margin-top: 50px;
+  overflow-x: auto;                            /*for scrolable effect
+  scrollbar-color: #0549a1 #e0e0e0;
+}
+
+
+  */
+  /* IN  ABOVE CSS THERE WILL BE A  VISIBLE SCROLLBAR WITH BLUE COLOR*/
+
+
+  .warehouse {
+  margin-top: 50px;
+  overflow-x: auto; /* Keep horizontal scrolling */
+
+  /* Firefox */
+  scrollbar-width: none;
+
+  /* IE and old Edge */
+  -ms-overflow-style: none;
+}
+
+/* Chrome, Edge, Safari */
+.warehouse::-webkit-scrollbar {
+  width: 0;
+  height: 0;
+}
+
+
+
+.war_head{
+  display: flex;
+  justify-content: center;
+  
+  margin-top: 10px;
+  background-color: #68777e;
+  border: 2px solid rgb(8, 8, 8);
+  color: white;
+
+}
+.war_head h2 {
+  font-family:Georgia, 'Times New Roman', Times, serif;
+}
+.checkout_container {
+  margin-top: 50px;
+  display: flex;
+  justify-content:center;
+  align-items: center;
+  font-size: 30px;
+  gap:10px
+}
+.checkout_container_ReqId input{
+ height: 30px;
+
+}
+.checkout_container button{
+    font-size: 20px;
+}
+
+
+/* warehouse page css end */
+
+
+
+
+/* For Tables in Project */
+.cart table{
+  min-width: 0px;
+}
+.cart_table_body td{
+  background-color: #dbfadb;
+}
+
+table{
+  width:98%;
+  margin: 0px auto;
+  border-collapse:collapse;
+  margin-top:20px;
+  box-shadow:0 2px 10px rgba(168, 164, 164, 0.1);
+  min-width: 700px;/*min width 700px means here when screen reduced to less than 700px then scrolable effect will work */
+}
+
+th{
+  background:#0549a1;
+  color:white;
+  padding:5px;
+  text-align:center;
+  border:1px solid rgb(16, 2, 2);
+}
+
+td{
+  padding:5px;
+  text-align:center;
+  background: #cbcfcf;
+
+  border:1px solid rgb(171, 160, 160);
+}
+
+
+tr:hover td{
+  background:#ffe082;
+}
+
+
+.cancel_b{/*for cancel button*/
+  background:#dc2626;
+  color:white;
+  border:none;
+  padding: 5px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.add_c_b{/*for add to cart and checkout button*/
+  background:#16a34a;
+  color:white;
+  border:none;
+  padding:5px 5px;
+  border-radius:5px;
+  cursor:pointer;
+}
+/*action select css */
+.action_select {
+    width: 50%;
+    padding: 4px 6px;
+    border: 2px solid #0549a1;
+    border-radius: 6px;
+    background-color: white;
+    color: #333;
+    font-size: 12px;
+    cursor: pointer;
+}
+
+.action_select:hover {
+    border-color: #068f03;
+}
+
+.action_select:focus {
+    outline: none;
+    border-color: #068f03;;
+    
+}
+
+
+/* CSS for index/home page */
+.login-container{
+    position:relative;
+    display:flex;
+    justify-content:center;
+    flex-direction: column;
+    align-items: center;
+    margin-top:50px;
+}
+
+.login-btn{
+    padding:12px 30px;
+    font-size:18px;
+    cursor:pointer;
+    background: #facb3f;
+}
+
+.dropdown-menu{
+    display:none;
+    position:static;
+    background:rgb(255, 255, 255);
+    border:1px solid #190404;
+    width:200px;
+}
+
+.dropdown-menu button{
+    width:100%;
+    padding:10px;
+    border:1px solid black;
+    background:rgb(221, 170, 2);
+    cursor:pointer;
+    color: rgb(17, 1, 1);
+}
+
+.dropdown-menu button:hover{
+    background:#f0f0f0;
+    color: #130303;
+}
+
+/* Popup */
+.popup{
+    display:none;
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    background:rgba(0,0,0,0.5);
+    justify-content:center;
+    align-items:center;
+}
+
+.popup-content{
+    background:rgb(221, 170, 2);
+    padding:20px;
+    width:300px;
+    border-radius:10px;
+    display:flex;
+    flex-direction:column;
+    gap:10px;
+}
+
+.popup-content input{
+    padding:10px;
+}
+
+/* action select css closed*/
+.right_shift{
+  margin-left:100px;
+  margin-right:100px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+/* CSS for about page 
+.abt{
+  display: flex;
+  margin-top: 100px;
+ 
+}
+.abt_text{
+
+   background-color: #f4dc52;
+
+}
+.abt_img img{
+
+    width:50vw;
+    height:32vh;
+}*/
+.abt{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  
+}
+
+.abt_text{
+  background-color:#f4dc52;
+  padding:20px;
+}
+
+.abt_img img{
+  width:100%;
+  height:auto;
+  display:block;
+}
+
+/* CSS for about page ends*/
+.show_error{
+  color: red;
+  font-weight: 550;
+}
+.cart h3{
+  text-align: center;
+}
+.cart{
+  margin-top: 10px;
+}
+    @media(max-width:770px){
+
+      .top-bar,
+      .main-header{
+        text-align:center;
+        gap:0px;
+        font-size: 9px;
+        padding: 2px 0px;
+      }
+       .logout-btn{
+  font-size: 10px;
+  font-weight: bold;
+}
+
+      .logo-section{
+        border: none;
+        padding: 0px;
+      
+      }
+
+      .header-text h3{
+        font-size:9px;
+      }
+
+      .header-text p{
+        font-size:10.5px;
+      }
+      .P_name{
+        font-size: 20px;
+      }
+
+      .navbar ul li a {
+        flex-direction:column;
+        font-size: 10px;
+        padding: 5px 15px;
+      }
+      .main_footer{
+      display: flex;
+      flex-direction: column;
+          font-size: 12px;
+
+    }
+   
+    .home_dash{
+        min-height: 65vh;
+        height: auto;
+        background-size: 100% 100%;
+        background-position: center;
+       
+    }
+   
+    .home_dash_box{
+      font-size: 11px;
+      padding: 4px;
+      border: 2px solid #ee8a5f;
+      width: 100px;
+    
+    }
+    .Inner_home_board{
+        display:flex;
+        flex-direction:column;
+        gap:10px;
+
+        width:150px;
+        margin-left:20px;
+        margin-top:20px;
+
+        height:auto;   
+    }
+    .admin_dash {
+      margin-top:20px;
+      display: flex;
+      flex-direction: column;
+      margin-left: 50px;
+      gap:50px;
+      font-size: 12px;
+    }
+    .admin_dash_box{
+      width: 150px;
+      padding:10px 5px;
+      font-size:10px;
+       width: 120px;
+    height: 35px;
+
+    }
+    .war_head{
+      font-size:12px;
+    }
+    table{
+        width:100%;
+        font-size:11px;
+    }
+
+    th,td{
+        padding:0px;
+        word-break:break-word;
+    }
+    .action_select {
+        width: 80%;
+        font-size: 11px;
+        padding: 4px;
+    }
+    .checkout_container {
+      flex-direction: column;
+
+    }
+  }
+@media(max-width:1293px){
+
+  .abt{
+    grid-template-columns:1fr;
+  
+  }
+
+  .abt_text{
+    font-size:15px;
+    padding:10px;
+  }
+
+  .abt_img{
+    width:100%;
+  }
+}
+
+
+
+
+   
